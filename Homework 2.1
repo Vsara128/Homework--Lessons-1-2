@@ -1,0 +1,17 @@
+#Homework 2.1
+
+print("Pozdrav, svrha ovog programa je pretvoriti kilometre u milje")
+
+odgovor = "DA"
+
+while True:
+    if odgovor == "NE":
+        print("Hvala i doviđenja!")
+        break
+    elif odgovor == "DA":
+        km = int(input("Unesite broj kilometara: "))
+        miles = km * 0.62137
+
+        print(km,"kilometara je jednako", miles, "milja")
+        odgovor = input("Želite li nastaviti konverziju? (odgovorite sa DA ili NE) ")
+        
